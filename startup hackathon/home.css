@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)),url('image/firs.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+#nav-bar{
+position: sticky;
+z-index: 5;
+
+}
+.navbar{
+
+  position: relative;
+  background: #555;
+  opacity: 0.7;
+}
+.navbar-brand{
+  margin-left: 10px;
+  padding: 30px 0;
+  width:110px;
+  color: #fff !important;
+
+}
+.navbar-nav li{
+  padding: 0 10px;
+
+}
+.navbar-nav li a{
+float: right;
+text-align: right;
+color: #fff !important;
+text-transform: uppercase ;
+position: relative;
+
+}
+.navbar-nav li a::after{
+content: '';
+height: 3px;
+width: 0;
+background: #009688;
+position: absolute;
+right: 0;
+bottom:-10px;
+transition: 0.5s;
+}
+.navbar-nav li a:hover::after{
+
+width: 100%;
+
+}
+#nav-bar ul li a:hover{
+  color: #007bff !important;
+}
+.nav-link{
+  color: #555;
+  font-weight: 600;
+  font-size: 18px;
+}
+.content {
+
+  top: 50%;
+  bottom:0;
+  transform: translateY(50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+}
+.content h1{
+  margin-top: 50px;
+  font-size: 70px;
+}
+.content p{
+  margin: 0 20px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.content button{
+  width: 200px;
+  padding: 15px 0 !important;
+  text-align: center ;
+  margin: 20px 10px;
+  font-weight: bold !important;
+  color: #fff;
+  background: transparent !important;
+  border: 2px #009688 solid !important;
+  cursor: pointer;
+  position: relative;
+}
+.content span{
+  background: #009688;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 18px;
+}
+.content span:hover{
+  background: transparent !important;
+}
+/*section */
+#about{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 2; /* Set the line height to a fixed value */
+    text-align: justify; /* Justify the text to ensure that it's evenly distributed across the width of the paragraph */
+  /* Adjust the font size as needed */
+    hyphens: auto;
+
+}
+
+
+#about .btn{
+  width: 200px;
+  padding: 15px 0 !important;
+  text-align: center !important;
+  margin: 20px 10px;
+  font-weight: bold !important;
+  color: #fff;
+  background: #009688 !important;
+  border: 2px #009688 solid !important;
+  cursor: pointer;
+  position: absolute;
+}
+.about-content{
+  padding-top: 10px;
+  text-align: right;
+
+}
+/* IDEA:  */
+.arabic-heading {
+  position: relative;
+  display: inline-block;
+   /* adjust as needed */
+  padding-bottom: 8px; /* adjust as needed */
+}
+
+.arabic-heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 3px; /* adjust as needed */
+  width: 0;
+  background-color: #009688; /* change to desired color */
+  transition: width 0.3s ease-out; /* adjust transition timing as needed */
+}
+
+.arabic-heading:hover::after {
+  width: 100%;
+}
+/* IDEA:services  */
+#services{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(image/first.jpg);
+  background-size:cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+#services h1{
+  padding-bottom:10px;
+}
+.services{
+  margin-top: 40px;
+}
+.services .icon{
+  font-size: 40px;
+  margin:auto;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  border: 1px #fff solid;
+  border-radius: 50%;
+}
+#services h3{
+
+}
+#services p{
+  font-size: 18px;
+  color: #ccc;
+  margin-top:20px;
+
+}
+.services .col-md-3:hover{
+  background: #009688;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* IDEA: benifits */
+#ben{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 2; /* Set the line height to a fixed value */
+    text-align: justify; /* Justify the text to ensure that it's evenly distributed across the width of the paragraph */
+  /* Adjust the font size as needed */
+    hyphens: auto;
+
+}
+#ben li{
+  border: none;
+  font-size: 24px;
+}
+#ben .fa{
+  font-size:30px;
+  color:#009688;
+}
+#ben .list-group{
+  border: 1px #009688 solid;
+}
+#ben .ft{
+  background:#009688 ;
+}
+.ft :hover{
+  background: #ddd !important;
+}
+/* IDEA: courses */
+
+/* IDEA: competition */
+.card-body {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+text-align: right;
+}
+
+.card-text-container {
+display: flex;
+flex-direction: column;
+}
+.card-title {
+margin-top: auto;
+font-size: 24px;
+font-weight: bold;
+
+}
+.card-img-top {
+			height: 200px;
+			object-fit: cover;
+}
+.card-body .btn{
+  background: #009688;
+
+}
+.card-body .btn-primary{
+  font-size: 20px !important;
+}
+.card-header {
+  background: #009688;
+  color: #fff ;
+  font-size: 18px;
+}
+/* IDEA: footer */
+#footer{
+  margin-top: 60px;
+  background: #009688;
+  padding: 90px 10px;
+  color: #fff;
+  text-align: right;
+}
+.footer-logo{
+  width: 200px;
+  height: 70px;
+  margin-right: 5px;
+  margin-top:65px;
+  margin-bottom: 15px;
+}
+#footer h1{
+  font-size: 22px;
+  margin-top:45px;
+  margin-bottom: 25px;
+}
+#footer p{
+  font-size: 18px;
+
+
+}
+#footer .city{
+  margin-right: 35px;
+
+}
+#footer .fa{
+  padding-left: 20px;
+  font-size: 24px;
+}
+#footer hr{
+  margin-top: 10px;
+  background: #fff
+}
+#footer .copyright{
+  margin-bottom:-80px;
+  text-align: center;
+  font-size: 18px;
+}
+.butnav{
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #009688;
+  border: 1px #009688 solid;
+}
+@media (max-width: 985px) {
+  .butnav{
+    width: 150px !important;
+    margin-right: 0 !important;
+    margin-bottom:10px;
+  }
+  .content{
+
+    margin-bottom:-10px !important;
+    margin-top: 0;
+    transform: translateY(-30%);
+  }
+  .content h1{
+    font-size: 70px !important;
+  }
+}
+@media (max-width: 447px) {
+
+  .content h1{
+    font-size: 50px !important;
+  }
+}
+.fa-bars{
+  color: #009688;
+  font-size: 30px !important;
+  padding: 10px;
+  border: 2px #009688 solid;
+  border-radius: 50%;
+}
+.navbar-toggler{
+  outline: none !important;
+}
+@media (max-width: 1049px) and (min-width: 769px) {
+  .ig {
+    width: 100%;
+    height: 95%;
+    /* Adjust as needed */
+  }
+  .i{
+    height: 79%;
+  }
+}
+
+/* Styles for screens with a maximum width of 600px */

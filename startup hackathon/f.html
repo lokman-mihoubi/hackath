@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card Example</title>
+	<!-- Add Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style type="text/css">
+    *{
+      direction:rtl;
+			text-align: right;
+    }
+		.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+	text-align: right;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+}
+.card-title {
+  margin-top: auto;
+
+}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+				<img class="card-img-top" src="image/innovation.jpg" alt="Card image cap">
+				<div class="card-header">
+					<div class="level">المستوى الاول</div>
+				</div>
+				<div class="card-body">
+					<div class="card-text-container">
+						<h5 class="card-title">دورة الذكاء الاصطناعي</h5>
+						<div class="level">المستوى الاول</div>
+					</div>
+					<p class="dates">الانطلاق:1 جانفي 2023</p>
+					<p class="dates">الاختتام:30 جانفي2023</p>
+					<button type="button" class="btn btn-primary" name="button">انضم الان</button>
+				</div>
+			</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
+course .card-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+#course .dates {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
